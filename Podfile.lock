@@ -8,11 +8,13 @@ PODS:
   - RecastAI (3.5.0):
     - Alamofire
     - ObjectMapper
+  - SnapKit (5.0.0)
 
 DEPENDENCIES:
   - ForecastIO
   - JSQMessagesViewController
   - RecastAI
+  - SnapKit
 
 SPEC REPOS:
   trunk:
@@ -22,6 +24,7 @@ SPEC REPOS:
     - JSQSystemSoundPlayer
     - ObjectMapper
     - RecastAI
+    - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
@@ -30,7 +33,8 @@ SPEC CHECKSUMS:
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   RecastAI: d9abaf97f914a07cc10ee0cb8be89bfe2b942280
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
 
-PODFILE CHECKSUM: f0a5819b19a83e023333d42c0a6dff26b0f66d7d
+PODFILE CHECKSUM: 742d7a6a47508aa24fe17100c98c8e47ae79e768
 
 COCOAPODS: 1.11.0

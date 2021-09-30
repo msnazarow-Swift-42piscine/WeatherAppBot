@@ -15,12 +15,12 @@ enum ChatAssembly{
 
         let viewController = ChatViewController()
         let router = ChatRouter(view: viewController)
-        let interactor = ChatInteractor()
-        let dataSource = ChatPresenterDataSource()
-        let presenter = ChatPresenter(view: viewController, interactor: interactor, router: router, dataSource: dataSource)
+        let darkSkyAPIService = DarkSkyAPIService()
+        let recastAIService = RecastAIService()
+        let interactor = ChatInteractor(darkSkyAPIService: darkSkyAPIService, recastAIService: recastAIService)
+        let presenter = ChatPresenter(view: viewController, interactor: interactor, router: router)
 
         viewController.presenter = presenter
-        dataSource.presenter = presenter
 
         return viewController
     }

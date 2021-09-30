@@ -23,11 +23,11 @@
 		3E9BAF232705E327001672FC /* ChatContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9BAF102705E327001672FC /* ChatContract.swift */; };
 		3E9BAF242705E327001672FC /* ChatAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9BAF122705E327001672FC /* ChatAssembly.swift */; };
 		3E9BAF252705E327001672FC /* ChatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9BAF142705E327001672FC /* ChatPresenter.swift */; };
-		3E9BAF262705E327001672FC /* ChatPresenterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9BAF152705E327001672FC /* ChatPresenterDataSource.swift */; };
 		3E9BAF272705E327001672FC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9BAF172705E327001672FC /* ChatViewController.swift */; };
 		3E9BAF282705E327001672FC /* ChatInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9BAF192705E327001672FC /* ChatInteractor.swift */; };
 		3E9BAF292705E327001672FC /* ChatRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9BAF1B2705E327001672FC /* ChatRouter.swift */; };
 		3EA9D2852705EB0000A97EA0 /* DarkSkyAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA9D2842705EB0000A97EA0 /* DarkSkyAPIService.swift */; };
+		3EA9D287270621C300A97EA0 /* RecastAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA9D286270621C300A97EA0 /* RecastAIService.swift */; };
 		A1C048C1F8C257ED69CAD910 /* Pods_WeatherAppBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4E4E2D30BAE0B40FDD281D /* Pods_WeatherAppBot.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,11 +52,11 @@
 		3E9BAF102705E327001672FC /* ChatContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContract.swift; sourceTree = "<group>"; };
 		3E9BAF122705E327001672FC /* ChatAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatAssembly.swift; sourceTree = "<group>"; };
 		3E9BAF142705E327001672FC /* ChatPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatPresenter.swift; sourceTree = "<group>"; };
-		3E9BAF152705E327001672FC /* ChatPresenterDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatPresenterDataSource.swift; sourceTree = "<group>"; };
 		3E9BAF172705E327001672FC /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		3E9BAF192705E327001672FC /* ChatInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatInteractor.swift; sourceTree = "<group>"; };
 		3E9BAF1B2705E327001672FC /* ChatRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRouter.swift; sourceTree = "<group>"; };
 		3EA9D2842705EB0000A97EA0 /* DarkSkyAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyAPIService.swift; sourceTree = "<group>"; };
+		3EA9D286270621C300A97EA0 /* RecastAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecastAIService.swift; sourceTree = "<group>"; };
 		E4067A81EC52E532C7517A2B /* Pods-WeatherAppBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppBot.debug.xcconfig"; path = "Target Support Files/Pods-WeatherAppBot/Pods-WeatherAppBot.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				3EA9D2842705EB0000A97EA0 /* DarkSkyAPIService.swift */,
+				3EA9D286270621C300A97EA0 /* RecastAIService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -218,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				3E9BAF142705E327001672FC /* ChatPresenter.swift */,
-				3E9BAF152705E327001672FC /* ChatPresenterDataSource.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -383,12 +383,12 @@
 				3E9BAF252705E327001672FC /* ChatPresenter.swift in Sources */,
 				3E9BAF242705E327001672FC /* ChatAssembly.swift in Sources */,
 				3E9BAF222705E327001672FC /* UIWindow+Ext.swift in Sources */,
+				3EA9D287270621C300A97EA0 /* RecastAIService.swift in Sources */,
 				3E707A6E2705381800278EAD /* ViewController.swift in Sources */,
 				3E707A6A2705381800278EAD /* AppDelegate.swift in Sources */,
 				3E9BAF1C2705E327001672FC /* WeatherAppBotContract.swift in Sources */,
 				3E9BAF202705E327001672FC /* TableViewContract.swift in Sources */,
 				3E9BAF1D2705E327001672FC /* CellModel.swift in Sources */,
-				3E9BAF262705E327001672FC /* ChatPresenterDataSource.swift in Sources */,
 				3E9BAF282705E327001672FC /* ChatInteractor.swift in Sources */,
 				3E707A6C2705381800278EAD /* SceneDelegate.swift in Sources */,
 				3E9BAF1F2705E327001672FC /* SectionModel.swift in Sources */,
@@ -473,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -528,7 +528,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -554,6 +554,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -583,6 +584,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

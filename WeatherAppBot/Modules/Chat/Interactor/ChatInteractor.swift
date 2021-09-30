@@ -6,17 +6,24 @@
 //  
 //
 
-import Foundation
+import JSQMessagesViewController
+import ForecastIO
+import RecastAI
+import CoreLocation
 
 class ChatInteractor: PresenterToInteractorChatProtocol {
-    let darkSlyAPIService: DarkSkyAPIServiceProtorol
-
-    init(darkSlyAPIService: DarkSkyAPIServiceProtorol) {
-        self.darkSlyAPIService = darkSlyAPIService
+    let darkSkyAPIService: DarkSkyAPIServiceProtorol
+    let recastAIService: RecastAIServiceProtocol
+    init(darkSkyAPIService: DarkSkyAPIServiceProtorol, recastAIService: RecastAIServiceProtocol) {
+        self.darkSkyAPIService = darkSkyAPIService
+        self.recastAIService = recastAIService
     }
 
     func getForecast(for location: CLLocationCoordinate2D, complition: @escaping (Result<Forecast, Error>) -> Void) {
-        darkSlyAPIService.getForecast(for: location, complition: complition)
+        darkSkyAPIService.getForecast(for: location, complition: complition)
     }
-   
+
+    func textRequest(text: String, complition: @escaping (Result<CLLocationCoordinate2D, Error>) -> Void) {
+        recastAIService.textRequest(text: text, complition: complition)
+    }
 }

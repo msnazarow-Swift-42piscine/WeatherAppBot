@@ -8,6 +8,7 @@ target 'WeatherAppBot' do
   pod "RecastAI"
   pod "ForecastIO"
   pod 'JSQMessagesViewController'
+  pod 'SnapKit'
   # Pods for Siri
 
 end
