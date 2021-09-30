@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ChatViewController.updateViewConstraints():ChatViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "inputToolbar.frame.origin.y">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ChatPresenterDataSource.collectionView(_:messageDataForItemAt:):ChatPresenterDataSource.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath!.item">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ChatViewController.loadView():ChatViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "collectionView.superview">
+            </PersistentString>
+            <PersistentString
+               value = "view">
+            </PersistentString>
+            <PersistentString
+               value = "collectionView.">
+            </PersistentString>
+            <PersistentString
+               value = "collectionView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ChatViewController.viewDidLoad():ChatViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "inputToolbar">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ChatPresenterDataSource.collectionView(_:numberOfItemsInSection:):ChatPresenterDataSource.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "messages.count">
+            </PersistentString>
+            <PersistentString
+               value = "messages">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ChatPresenter.didPressSend(withMessageText:senderId:senderDisplayName:):ChatPresenter.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
