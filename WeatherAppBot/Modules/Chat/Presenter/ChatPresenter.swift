@@ -72,7 +72,7 @@ class ChatPresenter: ViewToPresenterChatProtocol {
                     text.append(summary)
                 } else if let summary = forecast.hourly?.summary {
                     text.append(summary)
-                } else if let summary = forecast.daily?.summary {
+                } else if let summary = forecast.summary {
                     text.append(summary)
                 }
                 appendMessage(message: JSQMessage(senderId: botId, displayName: botDisplayName, text: text))
